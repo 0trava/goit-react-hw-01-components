@@ -8,7 +8,7 @@ import data from "../data/data.json";  // імпортуємо данні з б�
 import {Statistics} from './Statistics/Statistics';
 import friends from "../data/friends.json";  // імпортуємо данні з бекенду friends.json
 import {FriendList} from './FriendList/FriendList';
-import transactions from '../data/transactions.json';// імпортуємо данні з бекенду friends.json
+import transactions from '../data/transactions.json';// імпортуємо данні з бекенду transactions.json
 import {TransactionHistory} from './Transaction/TransactionHistory';
 
 
@@ -31,7 +31,7 @@ export function App () {
       <section class="Task3 FriendList">
           <FriendList friends={friends} />;
       </section>
-      
+
       <section class="Task4 Transactions">
           <TransactionHistory transactions={transactions} />;
       </section>
