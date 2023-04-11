@@ -7,8 +7,8 @@ export function FriendList ({friends}) {
         {friends.map(({id, avatar, name}) => (
             <li key={id} class="item">
                 <span class="status"></span>
-                <img class="avatar" src={avatar} alt="User avatar" width="48" />
-                <p class="name">{name}</p>
+                <img class="avatar_friend" src={avatar} alt="Useravatar" width="48" />
+                <p class="name_friend">{name}</p>
           </li>
         ))}
     </ul>

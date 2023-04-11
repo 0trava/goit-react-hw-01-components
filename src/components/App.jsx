@@ -31,11 +31,11 @@ export function App () {
       </section>
 
       <section class="section task-3 FriendList">
-          <FriendList friends={friends} />;
+          <FriendList friends={friends} />
       </section>
 
       <section class="section task-4 Transactions">
-          <TransactionHistory transactions={transactions} />;
+          <TransactionHistory transactions={transactions} />
       </section>
     </div>
   );

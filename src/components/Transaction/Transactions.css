@@ -1,0 +1,24 @@
+.transaction-history{
+    width: 400px;
+    
+}
+
+.transaction-head{
+    background: #2d2f40;
+    color: aliceblue;
+    height: 20px;
+}
+
+.transaction-head > tr > th{
+    padding: 10px 10px;
+}
+
+.transaction_body{
+    background: #f0f0f0;
+    align-items: center;
+}
+
+.transaction_body > tr > td{
+    padding: 10px 10px;
+    text-align: center;
+}

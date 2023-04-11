@@ -1,10 +1,37 @@
 .friend_list {
+    background: #2d2f40;
+    width: 400px;
+    padding: 0;
 }
 .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #f0f0f0;
+    padding: 10px 10px;
+    margin: 5px 5px;
+    border-radius: 5%;
 }
 .status {
+    margin-left: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: red;
+
 }
-.avatar {
+.avatar_friend {
+    margin: 0;
+    margin-left: 30px;
+    padding: 5px;
+    background: linear-gradient(130deg, #74b9ff, #e66767);
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+
 }
-.name {
+.name_friend {
+    margin-left: 40px;
+    color: #2c3a47;
+    font-size: 20px;
 }
