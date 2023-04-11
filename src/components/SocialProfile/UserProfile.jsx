@@ -1,6 +1,6 @@
 
 import PropTypes from "prop-types";
-import css from "./UserProfile.css";
+import css from "./UserProfile.css"; // підключення стилів на картку
 
 export function UserProfile ({  
     username = "User Name",
@@ -41,14 +41,14 @@ export function UserProfile ({
     );
 };
 
-UserProfile.prototype = {
-    username: PropTypes.string.isRequired,
-    tag: PropTypes.string.isRequired,
-    location: PropTypes.string.isRequired,
-    avatar: PropTypes.string,
-    stats: PropTypes.shape({
-      followers: PropTypes.number,
-      views: PropTypes.number,
-      likes: PropTypes.number,
-    }),
-  };
+UserProfile.propTypes = {
+  userName: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  stats: PropTypes.shape({
+    followers: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+  }).isRequired,
+};

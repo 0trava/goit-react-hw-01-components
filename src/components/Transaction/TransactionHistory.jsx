@@ -4,15 +4,15 @@ import css from "./Transactions.css";
 
 export function TransactionHistory ({transactions}) {
     return (
-        <table class="transaction-history">
-        <thead class="transaction-head">
+        <table className={css.transaction_history} class="transaction_history">
+        <thead className={css.transaction_head} class="transaction_head">
             <tr>
             <th>Type</th>
             <th>Amount</th>
             <th>Currency</th>
             </tr>
         </thead>
-        <tbody class="transaction_body">
+        <tbody className={css.transaction_body} class="transaction_body">
             {transactions.map(({ id, type, amount, currency }) => (
             <tr key={id}>
                 <td>{type}</td>

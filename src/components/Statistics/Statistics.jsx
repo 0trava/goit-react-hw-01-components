@@ -1,16 +1,16 @@
 import PropTypes from "prop-types";
-import css from "./Statistics.css";
+import css from "./Statistics.css"; // підключення стилів на картку
 
 export function Statistics ({ title, stats
 }) {
     return (
-        <div class="stat_card">
-        <h2 class="title">{title}</h2>
-        <ul className={css.stat} class="stat-list">
+        <div className={css.stat_card} class="stat_card">
+        {title && <h2 className={css.title}>{title}</h2>}
+        <ul className={css.stat_list} class="stat_list">
             {stats.map(({id, label, percentage}) => (
                 <li className={css.item} key={id} class="item_stat">
-                    <span class="label">{label}</span>
-                    <span class="percentage">{percentage}%</span>
+                    <span className={css.label} class="label">{label}</span>
+                    <span className={css.percentage} class="percentage">{percentage}%</span>
                 </li>
             ))}
         </ul>
@@ -22,5 +22,5 @@ export function Statistics ({ title, stats
 Statistics.prototype = {
     percentage: PropTypes.string.isRequired,
     id: PropTypes.string.isRequired,
-    label: PropTypes.string,
+    label: PropTypes.string.isRequired,
   };

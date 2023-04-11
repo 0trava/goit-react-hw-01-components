@@ -1,15 +1,15 @@
-.transaction-history{
+.transaction_history{
     width: 400px;
     
 }
 
-.transaction-head{
+.transaction_head{
     background: #2d2f40;
     color: aliceblue;
     height: 20px;
 }
 
-.transaction-head > tr > th{
+.transaction_head > tr > th{
     padding: 10px 10px;
 }
 
