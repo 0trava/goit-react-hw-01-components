@@ -1,8 +1,9 @@
 import PropTypes from "prop-types";
+import css from "./FriendList.css";
 
 export function FriendList ({friends}) {
  return (
-    <ul>
+    <ul class="friend_list">
         {friends.map(({id, avatar, name}) => (
             <li key={id} class="item">
                 <span class="status"></span>
