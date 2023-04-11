@@ -26,15 +26,15 @@ export function App () {
             stats={user.stats}
           />
       </section>
-      <section class="section task-2 Statistics">
+      <section className={css.section} class="section task-2 Statistics">
           <Statistics title="Upload stats" stats={data} />
       </section>
 
-      <section class="section task-3 FriendList">
+      <section className={css.section} class="section task-3 FriendList">
           <FriendList friends={friends} />
       </section>
 
-      <section class="section task-4 Transactions">
+      <section className={css.section} class="section task-4 Transactions">
           <TransactionHistory transactions={transactions} />
       </section>
     </div>
