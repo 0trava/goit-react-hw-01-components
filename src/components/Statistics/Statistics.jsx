@@ -5,7 +5,7 @@ export function Statistics ({ title, stats
 }) {
     return (
         <div className={css.stat_card} class="stat_card">
-        {title && <h2 className={css.title}>{title}</h2>}
+        {title && <h2 className={css.title} class="title">{title}</h2>}
         <ul className={css.stat_list} class="stat_list">
             {stats.map(({id, label, percentage}) => (
                 <li className={css.item} key={id} class="item_stat">
