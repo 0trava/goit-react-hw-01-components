@@ -39,12 +39,13 @@
     font-size: 13px;
     color: #CB69C1 ;
     font-weight: 500;
+    
 }
 
 
-.stat-list li+li{
+/* .stat-list li+li{
     border-left: 1px solid #29194b;
-}
+} */
 
 
 .item_stat{

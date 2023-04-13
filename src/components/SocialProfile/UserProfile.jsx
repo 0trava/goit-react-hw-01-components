@@ -1,6 +1,6 @@
 
 import PropTypes from "prop-types";
-import css from "./UserProfile.css"; // підключення стилів на картку
+import css from "./UserProfile.module.css"; // підключення стилів на картку
 
 export function UserProfile ({  
     username = "User Name",
@@ -10,31 +10,32 @@ export function UserProfile ({
     stats: { followers, views, likes },
 }) {
     return (
-        <div  className={css.profile} class="profile">
-            <div class="description">
+        <div  className={css.profile}>
+            <div className={css.description}>
               <img
-                className={css.avatar}
+                className={css.avatar_img}
+                width="100px"
+                height="100px"
                 src={avatar}
                 alt="User {username}"
-                class="avatar"
               />
-              <p className={css.name} class="name">{username}</p>
-              <p className={css.tag} class="tag">@{tag}</p>
-              <p className={css.location} class="location">{location}</p>
+              <p className={css.name}>{username}</p>
+              <p className={css.tag}>@{tag}</p>
+              <p className={css.location}>{location}</p>
             </div>
       
-            <ul className={css.stats}  class="stats">
+            <ul className={css.stats}>
               <li>
-                <span className={css.label}  class="label">Followers</span>
-                <span className={css.quantity}  class="quantity">{followers}</span>
+                <span className={css.label}>Followers</span>
+                <span className={css.quantity}>{followers}</span>
               </li>
               <li>
-                <span className={css.label}  class="label">Views</span>
-                <span className={css.quantity} class="quantity">{views}</span>
+                <span className={css.label}>Views</span>
+                <span className={css.quantity}>{views}</span>
               </li>
               <li>
-                <span className={css.label}  class="label">Likes</span>
-                <span className={css.quantity} class="quantity">{likes}</span>
+                <span className={css.label}>Likes</span>
+                <span className={css.quantity}>{likes}</span>
               </li>
             </ul>
       </div>

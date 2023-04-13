@@ -9,7 +9,7 @@
     height: 20px;
 }
 
-.transaction_head > tr > th{
+.transaction_th{
     padding: 10px 10px;
 }
 
@@ -18,7 +18,7 @@
     align-items: center;
 }
 
-.transaction_body > tr > td{
+.transaction_td{
     padding: 10px 10px;
     text-align: center;
 }

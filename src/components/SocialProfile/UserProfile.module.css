@@ -22,11 +22,13 @@
 .description {
     background: #2d2f40;
     width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
 }
 
-.avatar {
-    margin-top: 20px;
+.avatar_img {
+
     padding: 8px;
     background: linear-gradient(130deg, #74b9ff, #e66767);
     width: 150px;
@@ -35,12 +37,12 @@
 
 }
 
-.avatar img{
+/* .avatar img{
     display: block;
     width: 100px;
     height: 100px;
     border-radius: 50%;
-  }
+  } */
 
 
 

@@ -10,14 +10,14 @@ import friends from "../data/friends.json";  // імпортуємо данні 
 import {FriendList} from './FriendList/FriendList';
 import transactions from '../data/transactions.json';// імпортуємо данні з бекенду transactions.json
 import {TransactionHistory} from './Transaction/TransactionHistory';
-import css from "./Section/Section.css";
+import css from "./Section/Section.module.css";
 
 // className={css.section}
 
 export function App () {
   return (
-    <div class="container">
-      <section class="section task-1 Profile">
+    <div>
+      <section className={css.section}>
          <UserProfile
             username={user.username}
             tag={user.tag}
@@ -26,15 +26,15 @@ export function App () {
             stats={user.stats}
           />
       </section>
-      <section className={css.section} class="section task-2 Statistics">
+      <section className={css.section}>
           <Statistics title="Upload stats" stats={data} />
       </section>
 
-      <section className={css.section} class="section task-3 FriendList">
+      <section className={css.section}>
           <FriendList friends={friends} />
       </section>
 
-      <section className={css.section} class="section task-4 Transactions">
+      <section className={css.section}>
           <TransactionHistory transactions={transactions} />
       </section>
     </div>
