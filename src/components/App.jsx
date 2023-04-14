@@ -1,6 +1,9 @@
 // Installation
 // $ npm install --save prop-types
 
+// 
+// npm install --save styled-components 
+
 
 import user from "../data/user.json";  // імпортуємо данні з бекенду user.json
 import {UserProfile} from './SocialProfile/UserProfile';
